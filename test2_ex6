@@ -1,0 +1,10 @@
+import cmath
+x = input("numar 1 ")
+y = input("numar 2 ")
+
+try:
+    a = complex(x,y)
+    print a, '\n'
+    print a.conjugate(), '\n'
+except Exception as e:
+    print e.Value
