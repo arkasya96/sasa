@@ -1,0 +1,21 @@
+#Scrieti un script care sa:
+#1. preia de la tastatura un numar intreg n
+#2. sa verifice daca n este >5 si <15
+#3. sa calculeze suma k*(k-1), pentru k=2..n.
+
+try:
+    n = input("introduceti un numar \n")
+    if(n > 5 and n < 15):
+        print("este intre 5 si 15 \n")
+
+    suma = 0
+    for k in range(2, n+1):
+        suma +=k*(k-1)
+
+    print 'sum = ', '\n', suma
+    #print(suma)
+
+except Exception as e:
+    print e.value
+
+
