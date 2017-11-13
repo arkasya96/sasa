@@ -1,0 +1,31 @@
+elemente = []
+print 'lallala\n'
+n = raw_input()
+n = n.split()
+
+print n, '\n'
+print len(n)
+x = tuple(n)
+print n
+for i in x:
+    try:
+        i = float(i)
+    except Exception as e:
+        print e.Value
+    if i > 2 and i < 5:
+        print 'true\n'
+    else:
+        print 'false\n'
+
+suma = 0
+for i in x:
+    try:
+        i = float(i)
+    except Exception as e:
+        print e.Value
+    suma += i
+
+medieAritm = suma/len(x)
+print len(x), '\n'
+print suma, '\n'
+print medieAritm, '\n'
