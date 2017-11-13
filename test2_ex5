@@ -1,0 +1,20 @@
+x = input("input intreg ")
+suma =0;
+try:
+    x = int(x)
+    if x>=1000 and x<=9999:
+        print 'adevarat\n'
+    else:
+        print 'fals\n'
+    print hex(x), '\n'
+
+    while(abs(x) > 0):
+        suma+= x%10
+        x = x/10
+
+    print 'suma = ', suma
+
+except Exception as s:
+    print s.Value
+
+
