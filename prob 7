@@ -1,0 +1,12 @@
+import cmath
+try:
+    n1 = input("introdu un nr ")
+    n2 = input('introdu alt nr')
+    x = complex(n1,n2)
+    print x, '\n'
+    if(abs(x) <=2):
+        print 'adevaratt'
+    else:
+        print 'false'
+except Exception as e:
+    print str(e)
