@@ -1,0 +1,12 @@
+try:
+    a = input("intro ")
+    b = input("intro ")
+    a = int(a)
+    b = int(b)
+    if(a > 16 and b > 16 and a < 256 and b < 256):
+        print('adevarat')
+    print bin(a),'\n'
+    print bin(b),'\n'
+    print bin(a & b), '\n'
+except Exception as e:
+    print str(e)
