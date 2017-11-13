@@ -1,0 +1,18 @@
+x = input("introduceti un numar intreg")
+s = 0
+try:
+    x = int(x)
+    if(x > 4 and x < 16):
+        print 'true\n'
+    else:
+        print 'falsee\n'
+
+
+    if x > 3:
+        for k in range(3, x):
+            s += float((k+1)/k)
+except Exception as e:
+    print e.Value
+
+print s, '\n'
+
